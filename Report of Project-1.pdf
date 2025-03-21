@@ -1,0 +1,32 @@
+1. Task Definition:
+Objective: Develop a text summarization model to condense news articles into concise summaries.
+
+Significance: Summarization tools can save time and improve accessibility to information.
+
+2. Dataset Insights:
+Dataset: CNN/DailyMail.
+
+Preparation: Removed duplicates, normalized text, and filtered irrelevant entries.
+
+3. Training Summary:
+Model: Fine-tuned T5-small on the CNN/DailyMail dataset.
+
+Training Parameters: 3 epochs, learning rate of 2e-5, batch size of 8.
+
+4. Evaluation Results:
+ROUGE Scores:
+
+ROUGE-1: 0.45
+
+ROUGE-2: 0.25
+
+ROUGE-L: 0.40
+
+Analysis: The model performs well but could improve with more training data or a larger model like T5-large.
+
+5. Future Improvements:
+Larger Model: Use T5-large or BART for better performance.
+
+More Data: Train on the full CNN/DailyMail dataset.
+
+Hyperparameter Tuning: Experiment with different learning rates and batch sizes.
